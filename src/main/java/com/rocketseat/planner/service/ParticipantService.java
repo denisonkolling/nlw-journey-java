@@ -1,4 +1,4 @@
-package com.rocketseat.planner.participant;
+package com.rocketseat.planner.service;
 
 import java.util.List;
 import java.util.UUID;
@@ -6,7 +6,11 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rocketseat.planner.trip.Trip;
+import com.rocketseat.planner.dto.ParticipantCreateResponse;
+import com.rocketseat.planner.dto.ParticipantData;
+import com.rocketseat.planner.entity.Participant;
+import com.rocketseat.planner.entity.Trip;
+import com.rocketseat.planner.repository.ParticipantRepository;
 
 @Service
 public class ParticipantService {

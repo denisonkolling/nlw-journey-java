@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
-import com.rocketseat.planner.trip.Trip;
+import com.rocketseat.planner.entity.Trip;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

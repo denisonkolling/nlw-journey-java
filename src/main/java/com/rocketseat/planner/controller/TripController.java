@@ -1,4 +1,4 @@
-package com.rocketseat.planner.trip;
+package com.rocketseat.planner.controller;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -20,14 +20,18 @@ import com.rocketseat.planner.activity.ActivityData;
 import com.rocketseat.planner.activity.ActivityRequestPayload;
 import com.rocketseat.planner.activity.ActivityResponse;
 import com.rocketseat.planner.activity.ActivityService;
-import com.rocketseat.planner.link.LinkData;
-import com.rocketseat.planner.link.LinkRequestPayload;
-import com.rocketseat.planner.link.LinkResponse;
-import com.rocketseat.planner.link.LinkService;
-import com.rocketseat.planner.participant.ParticipantCreateResponse;
-import com.rocketseat.planner.participant.ParticipantData;
-import com.rocketseat.planner.participant.ParticipantRequestPayload;
-import com.rocketseat.planner.participant.ParticipantService;
+import com.rocketseat.planner.dto.LinkData;
+import com.rocketseat.planner.dto.LinkRequestPayload;
+import com.rocketseat.planner.dto.LinkResponse;
+import com.rocketseat.planner.dto.ParticipantCreateResponse;
+import com.rocketseat.planner.dto.ParticipantData;
+import com.rocketseat.planner.dto.ParticipantRequestPayload;
+import com.rocketseat.planner.dto.TripCreateResponse;
+import com.rocketseat.planner.dto.TripRequestPayload;
+import com.rocketseat.planner.entity.Trip;
+import com.rocketseat.planner.repository.TripRepository;
+import com.rocketseat.planner.service.LinkService;
+import com.rocketseat.planner.service.ParticipantService;
 
 @RestController
 @RequestMapping("/trips")

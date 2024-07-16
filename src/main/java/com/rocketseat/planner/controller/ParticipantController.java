@@ -1,4 +1,4 @@
-package com.rocketseat.planner.participant;
+package com.rocketseat.planner.controller;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.rocketseat.planner.dto.ParticipantRequestPayload;
+import com.rocketseat.planner.entity.Participant;
+import com.rocketseat.planner.repository.ParticipantRepository;
 
 
 
